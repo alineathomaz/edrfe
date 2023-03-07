@@ -41,13 +41,13 @@ function getData()
      console.log(firebase_message_id);
      console.log(message_data);
      name = message_data['name'];
-     mensagem = message_data['mensagem'];
+     message = message_data['message'];
      like = message_data['like'];
-name_with_tag = "<h4>" + name + "<img class = 'user_tick scr = 'tick.png></h4>";
-messagem_with_tag = "<h4 class = 'messagem_h4'>"  + messagem + "</h4>"
-like_button = "<button class = 'btn btn-warning> id="+ firabase_massage_id+"value="+ like +"onclick='upadetlike(this.id)'"
-spam_with_tag = "<spam class='glayphicon glayphicon-thumbs=-up'>Curtidas: "+ like +"<spam></button><hr>";
-row = name_with_tag + name_with_tag + like_button + spam_with_tag;
+name_with_tag = "<h4>"+ name +"<img class='user_tick' scr='tick.png'></h4>";
+messagem_with_tag = "<h4 class='message_h4'>" + messagem + "</h4>"
+like_button = "<button class='btn btn-warning'> id="+firabase_massage_id+" value="+ like +" onclick='upadetlike(this.id)'>";
+span_with_tag = "<span class='glyphicon glyphicon-thumbs-up'>Curtidas: "+ like +"<span></button><hr>";
+row = name_with_tag + message_with_tag +like_button + spam_with_tag;
 document.getElementById("output").innerHTML += row;
 //Programe até aqui
       } 
